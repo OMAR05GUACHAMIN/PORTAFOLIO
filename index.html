@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">OMAR</a>
+            </div>
+            <nav id="nav">
+                <ul> 
+                    <li><a href="#inicio" onclick="seleccionar()">--INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">-CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpeg" alt="">
+            </div>
+            <h1>OMAR GUACHAMIN</h1>
+            <h2>Tecnólogo en desarrollo Software</h2>
+            <div class="redes">
+            <a href="https://www.facebook.com/omar.guachamin.3/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/omarguachamin?igsh=MWRmbTdqaDdqejFheQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@omarguachamin?_t=8pV0tevLGH0&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://github.com/OMAR05GUACHAMIN"target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Omar Guachamin.</span> 
+                Soy graduado de la Escuela Politécnica Nacional, caracterizado por un fuerte compromiso, organización 
+                y eficiencia. Me apasiona el desarrollo frontend y las tecnologías emergentes, lo que me impulsa a 
+                continuar aprendiendo y perfeccionando mis habilidades. Me gusta participar activamente en proyectos 
+                de software, con el objetivo de seguir ganando experiencia y contribuir de manera significativa al éxito 
+                de los mismos. Mi enfoque está siempre orientado hacia la calidad y la excelencia en cada tarea.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de Nacimiento</strong>
+                            10-07-1995
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            0998822997
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            omar_9rl@hotmail.com
+                        </li>
+                       
+                        <li>
+                            <strong>Dirección</strong>
+                            Av. Mariscal Sucre y Alto Mirador
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://epnecuador-my.sharepoint.com/:b:/g/personal/edwin_guachamin_epn_edu_ec/ETd0i5k_7h9CueBwrXl3-8IBDltmbhid7BTFNZccBiXPBw?e=h61tJ0" target="_blank">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Bootstrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mysql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">                      
+                        <h4>Tecnología en desarrollo de Software</h4>
+                        <span class="casa">Escuela Politécnica Nacional</span>
+                        <span class="fecha">2019 - 2024</span>
+                        <p>TITULO REGISTRADO EN EL SENESCYT</p>
+                        <p>Número de registro 1001-2024-2985252</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciado en Ciencias de la Educación Mención Matemática y Física</h4>
+                        <span class="casa">Universidad Central del Ecuador</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>TITULO REGISTRADO EN EL SENESCYT</p>
+                        <p>Número de registro 1005-2020-2234889</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller en ciencias Físico Matemático</h4>
+                        <span class="casa">Unidad Educativa "Juan Montalvo"</span>
+                        <span class="fecha">2009 - 2015</span>
+    
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Junior</h4>
+                        <span class="casa">Tocomrup "Delicias Criollas"</span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p>1.	Desarrollo de la página web en WordPress</p>
+                        <P>2.	Mantenimiento de la página Web</P>
+                        <P>3.	Diseño de la pagina web</P>
+                        <P>4.	Manejo de redes sociales</P>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Programador Junior</h4>
+                        <span class="casa">POSEIDON CROSSFIT</span>
+                        <span class="fecha">2024</span>
+                        <p>Desarrolló e implementó de un sistema web para el negocio en React</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Diseñador</h4>
+                        <span class="casa">Mundo DEV</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Manejo de redes sociales y diseño en Phothoshop</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Profesor de Matemáticas</h4>
+                        <span class="casa">FEEDBACK: CENTRO TERAPÉUTICO FAMILIAR Y NEUROPSICOPEDAGOGÍA</span>
+                        <span class="fecha">2017</span>
+                        <p>Nivelación de matemática y física</p>
+                        <p>Experiencia 3 meses</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Profesor de Matemáticas-Física </h4>
+                        <span class="casa">MULTITAREAS</span>
+                        <span class="fecha">2017-2022</span>
+                        <p>Impartir refuerzos pedagógicos de matemática y física</p>
+                        <p>Experiencia 5 años</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Profesor de Matemáticas-Física</h4>
+                        <span class="casa">Unidad Educativa “Alfredo Pérez Guerrero”- San Pablo de Lagos </span>
+                        <span class="fecha">2018</span>
+                        <p>capacitacion a los estudiantes del tercero de bachillerato</p>
+                        <p>Experiencia 40 horas</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Profesor de Matemáticas-Física</h4>
+                        <span class="casa">UNIDAD EDUCATIVA “ISABEL TOBAR” </span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Manejo de redes sociales y diseño en Phothoshop</p>
+                        <p>Experiencia 3 meses</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Profesor de Matemáticas-Física</h4>
+                        <span class="casa">PREUNIVERSITARIO HAWKING</span>
+                        <span class="casa">PREUNIVERSITARIO CUMBRE</span>
+                        <span class="casa">PREUNIVERSITARIO ALPHA BINET</span>
+                        <span class="fecha">2016 - 2022</span>
+                        <p>Clases para ingreso a las Universidades</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Profesor de Matemáticas-Física</h4>
+                        <span class="casa">UNIDAD EDUCATIVA FISCOMISIONAL“TÉCNICO ECUADOR” </span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Docente y coordinador de área de Matemática</p>
+                        <p>Experiencia 2 años</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <a href="https://crossfit-app-beta.vercel.app/" target="_blank" class="proyecto-enlace">
+                    <div class="proyecto">
+                        <img src="img/Crossfit1.png" alt="">
+                        <div class="overlay">
+                            <h3>Centro de Crossfit</h3>
+                            <p>React JS</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://restaurante-italiano-psi.vercel.app/" target="_blank" class="proyecto-enlace">
+                    <div class="proyecto">
+                        <img src="img/restaurante.png" alt="">
+                        <div class="overlay">
+                            <h3>Restaurante Italiano</h3>
+                            <p>html css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://noticias-lemon-eight.vercel.app/" target="_blank" class="proyecto-enlace">
+                    <div class="proyecto">
+                        <img src="img/noticias1.png" alt="">
+                        <div class="overlay">
+                            <h3>Noticias</h3>
+                            <p>html css Javascript</p>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="https://github.com/OMAR05GUACHAMIN/PROYECTOS_JAVASCRIPT" target="_blank" class="proyecto-enlace">
+                    <div class="proyecto">
+                        <img src="img/js.avif" alt="">
+                        <div class="overlay">
+                            <h3>PROYECTOS JAVASCRIPT</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/OMAR05GUACHAMIN/PROYECTO_HTML_CSS" target="_blank" class="proyecto-enlace">
+                    <div class="proyecto">
+                        <img src="img/html.jpg" alt="">
+                        <div class="overlay">
+                            <h3>PROYECTOS html css</h3>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+               
+                <!-- Mapa -->
+                <div class="col">
+                    <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.888953666177!2d-78.54925055!3d
+                        -0.25788259999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d598df3ddc65c5%3A0x18203d4f3fa6602c!2sBiloxi%2C%20Quito!5e0!3m2!1ses!2sec!
+                        4v1725635744987!5m2!1ses!2sec" 
+                        width="1070" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. Mariscal Sucre y Alto mirador "La Biloxi"
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 0998822997 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: omar_9rl@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/omar.guachamin.3/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/omarguachamin?igsh=MWRmbTdqaDdqejFheQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@omarguachamin?_t=8pV0tevLGH0&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://github.com/OMAR05GUACHAMIN"target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
